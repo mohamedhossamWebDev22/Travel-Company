@@ -7,6 +7,13 @@ const App = () => {
   return (
     <>
       <Navbar/>
+
+      <div className="content">
+        <div className="first">
+          <h1>Welcome to <span>Travilia</span></h1>
+          <p>The Best Travel Company You will See Ever !</p>
+        </div>
+      </div>
     </>
   );
 }
