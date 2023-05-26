@@ -6,6 +6,7 @@ $c1: rgb(0, 102, 255);
 }
 
 body{
+  padding-bottom: 5%;
   .error{
     color: crimson;
     
@@ -116,6 +117,63 @@ body{
 
       border-bottom-left-radius: 60px;
       border-bottom-right-radius: 60px;
+    }
+
+    .second{
+      margin-top: 6%;
+      h1{
+        font-size: 30px;
+        font-family: sans-serif;
+
+        text-decoration: $c1 underline;
+      }
+      .cards{
+        margin-top: 3%;
+
+        display: flex;
+
+        justify-content: space-around;
+        align-items: center;
+
+        .card{
+          border-radius: 10px;
+          
+          box-shadow: 0px 4px 8px #555;
+          img{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+          }
+          .title{
+            font-family: sans-serif;
+            font-size: 15px;
+
+            padding: 5%;
+
+            color: black;
+            background: white;
+
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+          }
+          &:hover{
+            position: fixed;
+
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            img{
+              width: 500px;
+              height: 300px
+            }
+            .title{
+              visibility: visible;
+
+              font-size: 30px;
+            }
+          }
+        }
+      }
     }
   }
 }
