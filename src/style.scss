@@ -194,8 +194,6 @@ body{
         color: lightgray;
         background: $c1;
 
-        width: 500px;
-
         font-size: 20px;
         font-family: sans-serif;
 
@@ -322,4 +320,50 @@ footer{
   padding-bottom: 2%;
 
   color: white;
+}
+
+
+/*
+start to make website responsive 
+by increase font-size and make flex-direction : columun
+*/
+
+@media screen and (max-width: 780px) {
+  body{
+    .navBar{
+      font-size: 15px;
+
+      justify-content: space-between;
+      h1{
+        font-size: 20px;
+      }
+      p{
+        font-size: 15px;
+      }
+      h2{
+        font-size: 10px;
+      }
+    }
+
+    .first{
+      p{
+        width: 100px
+      }
+    }
+    
+    .cards{
+      flex-direction: column;
+      .card{
+        margin: 2%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .first{
+    p{
+      width: 500px;
+    }
+  }
 }
