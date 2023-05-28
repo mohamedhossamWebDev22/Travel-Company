@@ -2,11 +2,13 @@ import React from 'react';
 
 // import components.
 import Navbar from '../components/navbar'; 
+import Blank from "../components/blank";
 
 // import photos.
 import spain  from "../assets/spain.png";
 import dubai  from "../assets/dubai.png";
 import giza  from "../assets/pyramid.png";
+import location  from "../assets/location.png";
 
 const App = () => {
   return (
@@ -18,11 +20,10 @@ const App = () => {
           <h1>Welcome to <span>Travilia</span></h1>
           <p>The Best Travel Company You will See Ever !</p>
         </div>
+        
+        <Blank/>
 
-        <br />
-        <hr />
-
-        <div className="second">
+        <div className="part second">
           <h1>Our Programes</h1>
           <div className="cards">
             <div className="card">
@@ -38,6 +39,13 @@ const App = () => {
               <div className="title">Giza</div>
             </div>
           </div>
+        </div>
+
+        <Blank/>
+
+        <div className="part third">
+          <h1>Our Locations</h1>
+          <img src={location} width='300px' height='400px'/>
         </div>
       </div>
     </>

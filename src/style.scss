@@ -70,6 +70,11 @@ body{
     }
   }
 
+  .part{
+    margin-top: 6%;
+    margin-bottom: 1%;
+  }
+
   .content{
     padding-right: 5%;
     padding-left: 5%;
@@ -120,7 +125,7 @@ body{
     }
 
     .second{
-      margin-top: 6%;
+      
       h1{
         font-size: 30px;
         font-family: sans-serif;
@@ -173,6 +178,19 @@ body{
             }
           }
         }
+      }
+    }
+
+    .third{
+      h1{
+        font-size: 30px;
+        font-family: sans-serif;
+
+        text-decoration: $c1 underline;
+      }
+
+      img{
+        margin-top: 50px;
       }
     }
   }
