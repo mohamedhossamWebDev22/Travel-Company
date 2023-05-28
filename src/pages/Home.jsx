@@ -26,7 +26,7 @@ const App = () => {
         
         <Blank/>
 
-        <div className="part second">
+        <div className="part pageTwo second">
           <h1>Our Programes</h1>
           <div className="cards">
             <div className="card">
